@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         ul{list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 115, 255);
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 27px;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active{
+ float: left;
+}
+    input[type=text],
+    textarea {
+        width: 90%;
+        padding: 20px 10px;
+        margin: 10px 0;
+        display: inline-block;
+        border: 3px solid rgb(0, 115, 255);
+        border-radius: 4px;
+    }
+
+    input[type=text]:hover {
+        background-color: rgb(196, 219, 255);
+    }
+
+    input[type=text]:focus {
+        font-size: 1.2em;
+    }
+
+    input[type=submit] {
+        background-color:  rgb(0, 115, 255);
+        border: none;
+        color: white;
+        padding: 16px 32px;
+    }
+
+    h2{
+        text-align: center;
+        text-decoration: underline;
+        text-underline-offset: 13px;
+        margin-top: 70px;
+    }
+
+    p{
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    div{
+        text-align: center;
+        
+    }
+
+    table {
+            border-collapse: collapse;
+            margin: 50px;
+            border-spacing: 500px;
+            float:center;
+            text-align: center;
+        }
+        td, th {
+            border-bottom: 1px solid  rgb(0, 115, 255);
+            width: 100px;
+        }
+
+        th {
+            background-color: rgb(0, 115, 255);
+            color: white;
+        }
+
+        th{ text-align: center;
+            margin-left: 100px ;
+            width: 100px;
+        }
+
+        td{
+            text-align: center;
+           
+        }
+
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+         <li class="active"><a href="index.html">HOME</a></li>
+          <li><a href="contents2.html">QUESTION</a></li> 
+          <li><a href="contents1.html">MAP</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+        </ul>
+      </nav>
+
+    <h2>질문</h2>
+    <p>"해리단길에 궁금한 점이 있다면 무엇이든 질문해주세요"</p>
+
+    <div>
+        <form action="process.jsp">
+            <label for="name"><b>닉네임</b></label><br>
+            <input type="text" id="name" name="name" placeholder="닉네임"><br>
+            <label for="email"><b>제목</b></label><br>
+            <input type="text" id="email" name="email" placeholder="제목"><br>
+            <label for="subject"><b>질문</b></label><br>
+            <textarea id="subject" name="subject" placeholder="질문해주세요." style="height:100px"></textarea>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+<br><br>
+<center>
+        <table  width="1920px" height="200px">
+            <thead width="1500px" height="50px">
+                <tr>
+                    <th>닉네임</th>
+                    <th>아이디</th>
+                    <th>제목.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bill</td>
+                    <td>아이디1</td>
+                    <td>해리단길 행사에 관해 문의드립니다</td>
+                </tr>
+                <tr>
+                    <td>Steve</td>
+                    <td>아이디2</td>
+                    <td>해리단길 행사에 관해 문의드립니다</td>
+                </tr>
+                <tr>
+                    <td>Larry</td>
+                    <td>아이디3</td>
+                    <td>해리단길 행사에 관해 문의드립니다</td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ ul{list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(0, 115, 255);
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 27px;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active{
+ float: left;
+}
+
+h2{
+        text-align: center;
+        text-decoration: underline;
+        text-underline-offset: 13px;
+        margin-top: 70px;
+    }
+
+    p{
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+    input[type=button] {
+        background-color:  rgb(0, 115, 255);
+        border: none;
+        color: white;
+        padding: 16px 32px;
+
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+         <li class="active"><a href="index.html">HOME</a></li>
+          <li><a href="contents2.html">QUESTION</a></li> 
+          <li><a href="contents1.html">MAP</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+        </ul>
+      </nav>
+    <h2>해리단길 지도</h2>
+    <p>"필요에 따라 다운받으셔도 좋습니다" </p>
+
+    <div style="text-align : center;">
+    <img src="19.jpg" width="1500px" height="1100px" float="center">
+    </div><br><br>
+    <div style="text-align:center; margin-bottom: 70px;"><input type="button" value="download"></div>
+</body>
+</html>
